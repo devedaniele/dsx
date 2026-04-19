@@ -1,9 +1,23 @@
 #!/bin/sh
 
-apt update
+# Updating package repositories and upgrading existing packages
+apt update && apt upgrade -y
 
-apt upgrade
+# Installing terminal applications: man (manual pages),
+#       bat (cat alternative), tmux (terminal multiplexer),
+#       neovim (text editor), git (version control),
+#       openssh (SSH client)
+apt install man bat tmux neovim git openssh -y
 
-apt install man x11-repo -y
+# Installing x11 repository for graphical applications
+apt install x11-repo -y
 
-apt install termux-x11-nightly mesa-vulkan-icd-freedreno bspwm alacritty tmux neovim openssh polybar dunst feh
+# Installing X11 server and Vulkan drivers for graphical applications
+apt install termux-x11-nightly mesa-vulkan-icd-freedreno -y 
+
+# Installing graphical applications: bspwm (window manager),
+#       alacritty (terminal emulator), polybar (status bar),
+#       dunst (notification daemon), and feh (image viewer)
+apt install bspwm alacritty polybar dunst feh -y
+
+repo_url="https://"
