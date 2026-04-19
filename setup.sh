@@ -20,4 +20,4 @@ apt install termux-x11-nightly mesa-vulkan-icd-freedreno -y
 #       dunst (notification daemon), and feh (image viewer)
 apt install bspwm alacritty polybar dunst feh -y
 
-repo_url="https://"
+repo_url="https://raw.githubusercontent.com/devedaniele/dsx/refs/heads/main"
