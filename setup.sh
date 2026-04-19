@@ -9,7 +9,7 @@ rm $PREFIX/etc/motd
 #       bat (cat alternative), tmux (terminal multiplexer),
 #       neovim (text editor), git (version control),
 #       openssh (SSH client)
-apt install man bat tmux neovim git openssh lazygit -y
+apt install man bat tmux neovim git openssh lazygit fzf -y
 
 # Installing x11 repository for graphical applications
 apt install x11-repo -y
