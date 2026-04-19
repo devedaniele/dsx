@@ -17,7 +17,8 @@ apt install termux-x11-nightly opengl mesa-vulkan-icd-freedreno -y
 
 # Installing graphical applications: bspwm (window manager),
 #       alacritty (terminal emulator), polybar (status bar),
-#       dunst (notification daemon), and feh (image viewer)
-apt install bspwm alacritty polybar dunst feh -y
+#       dunst (notification daemon), and feh (image viewer),
+#       libxkbcommon (keyboard compiler)
+apt install bspwm alacritty polybar dunst feh libxkbcommon -y
 
 repo_url="https://raw.githubusercontent.com/devedaniele/dsx/refs/heads/main"
