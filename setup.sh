@@ -12,8 +12,8 @@ apt install man bat tmux neovim git openssh -y
 # Installing x11 repository for graphical applications
 apt install x11-repo -y
 
-# Installing X11 server and Vulkan drivers for graphical applications
-apt install termux-x11-nightly mesa-vulkan-icd-freedreno -y 
+# Installing X11 server alongwith Open GL and Vulkan drivers for graphical applications
+apt install termux-x11-nightly opengl mesa-vulkan-icd-freedreno -y 
 
 # Installing graphical applications: bspwm (window manager),
 #       alacritty (terminal emulator), polybar (status bar),
