@@ -3,6 +3,8 @@
 # Updating package repositories and upgrading existing packages
 apt update && apt upgrade -y
 
+rm $PREFIX/etc/motd
+
 # Installing terminal applications: man (manual pages),
 #       bat (cat alternative), tmux (terminal multiplexer),
 #       neovim (text editor), git (version control),
